@@ -18,24 +18,25 @@
             font-family: 'Courier New', Courier, monospace;
             background-color: black ;
             width:auto;
-            height: 10%;
+            height: 15%;
             text-align: center;
             padding-top: 15px;
             padding-bottom: 10px;
             margin-top: 0px;
-            margin-bottom: 4px;
+            
         }
         #imgone
         {
             margin-top: 0px;
-            height: 350px;
+            height: 320px;
             width: 100%;
+            position:static;
 
         }
         #btn
         {
             align-items: center;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-left: 30px;
             float:left ;
             height:40px;
@@ -43,34 +44,42 @@
             background-color: #04AA6D;
             color: #ffffff;
             border-color: #04AA6D;
+            
         }
-        .main{
+        body{
             background-image: url("https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg");
-            height: 800px;
+            height: 100%;
             width:100%;
 
         }
         #time{
             color:#ffffff;
         }
+        #line{
+            background-color:#040faa; 
+            height: 3px;
+            width: 100%;
+        }
         
     </style>
   </head>
   <body>
- <div class="main">
-     
-    <h1 class="tm" id="first">Smile,Please !!!</h1>
-    <div class="tm" ><h3>Current Time</h3> 
-        <div id="time"><h2>Time</h2></div>
+ 
+     <div class="tm">
+    <h1 id="first">Smile,Please !!!</h1>
+    <div id="line"></div>
+    <h3>Current Time</h3> 
+    
+        <div><h3 id="time">Time</h3></div>
     </div>
-    <img id="imgone" src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300">
-    <div></div>
+    <div id="line"></div>
+    <img id="imgone" src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"/>
     <button type="button" onclick="myfunc()" id="btn">Submit</button>
     </div>
     <script>
         function myfunc(){
             document.getElementById("first").innerHTML = " Your photo !!!";
-            document.getElementById("imgone").src = "https://cdn.pixabay.com/photo/2018/08/04/10/23/man-3583424_1280.jpg";
+            document.getElementById("imgone").src = "https://funkylife.in/wp-content/uploads/2021/06/whatsapp-dp-15.jpg";
            
         }
         let a;
