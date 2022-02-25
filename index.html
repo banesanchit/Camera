@@ -60,6 +60,19 @@
             height: 3px;
             width: 100%;
         }
+        #btn1{
+            visibility: hidden;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 30px;
+            float:left ;
+            height:40px;
+            width:100px;
+            background-color: #04AA6D;
+            color: #ffffff;
+            border-color: #04AA6D;
+            
+        }
         
     </style>
   </head>
@@ -74,14 +87,27 @@
     </div>
     <div id="line"></div>
     <img id="imgone" src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"/>
-    <button type="button" onclick="myfunc()" id="btn">Submit</button>
+    <button type="button" onclick="myfunc()" id="btn">Click</button>
+    <button type="button" onclick="myfunc1()" id="btn1">Back</button>
     </div>
     <script>
         function myfunc(){
             document.getElementById("first").innerHTML = " Your photo !!!";
             document.getElementById("imgone").src = "https://funkylife.in/wp-content/uploads/2021/06/whatsapp-dp-15.jpg";
+            document.getElementById("btn").style.visibility="hidden";
+            document.getElementById("btn1").style.visibility="visible";
            
         }
+        function myfunc1(){
+            
+                
+                document.getElementById("imgone").src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300";
+                document.getElementById("first").innerHTML=">Smile,Please !!!";
+                document.getElementById("btn").style.visibility="visible";
+                document.getElementById("btn1").style.visibility="hidden";
+
+        }
+
         let a;
         let date;
         let time;
